@@ -1,0 +1,2614 @@
+ +--------------------+
+ | IMPORTANTE DE JAVA |
+ +--------------------+
+	a. Lenguaje fuertemente tipado
+	b. Las lineas terminan con ;
+	c. = (Operador de asignacion)
+
+	e. Duplicar : Ctrl + Enter
+
+ +-----------+
+ | VARIABLES |
+ +-----------+
+ Espacios de memoria donde vamos almacenar valores (datos)
+
+	+-----------------------+
+ 	| DECLARAR UNA VARIABLE |
+ 	+-----------------------+
+		tipoDeDato nombreVariable = valor
+
+ 			String nombre = "Luciano";
+ 			int edad = 10;
+ 			double peso = 90.0;
+
+
+ +------------------------+
+ |OPERACIONES ARIDMETICAS |
+ +------------------------+
+	int valor 1 = 5;
+	int valor 2 = 2;
+ 	int resultado = 7; El resultado sera del mismo tipo que las variables
+
+ +------------------------------------------------------+
+ | OPERADORES ARITMETICO CON RESULTADO DE DISTINTO TIPO |
+ +------------------------------------------------------+
+	a. COCIENTE ENTRE UNA VARIABLE int Y UN VALOR CONSTANTE
+ 		int valor 15
+		double cociente;
+ 		cociente = valor / 2; (int)
+ 		cociente: 7(int)
+
+ 		SOLUCION:
+ 			int valor 15
+ 			double cociente;
+ 			cociente = valor / 2.0; (double)
+ 			cociente: 7(double)
+
+	b. COCIENTE ENTRE DOS VARIABLE DE TIPO int
+ 		int valor1 = 15;
+ 		int valor2 = 2;
+ 		double cociente;
+ 		cociente= valor1/valor2
+ 		cociente: 7(int)
+
+ 		SOLUCION:
+ 			int valor1 = 15;
+			int valor2 = 2;
+ 			double cociente;
+ 			cociente= (double)valor1/valor2
+ 			cociente: 7.0(double)
+
+ +----------------+ 
+ | TIPOS DE DATOS |
+ +----------------+
+	+-----------+
+	| NUMERICOS |
+	+-----------+
+		* Integer
+		* double
+		* float
+	+-------+
+	| TEXTO |
+	+-------+
+		* String (String nombre = "Luciano")
+	+--------+
+	|BOLEANO |
+	+--------+
+		* true
+		* false
+
+ +------------------+
+ | SINTAXIS DE JAVA |
+ +------------------+
+	+-------------+
+	| MATEMATICOS |
+	+-------------+
+		+  Suma
+		-  Resta
+		/  Division
+		*  Multiplicacion
+		%  Modulo (Sobrante de la division)
+		++ Operador unario (Suma1)
+		-- Operador unario (Resta1)
+
+	+--------------------+
+	| OPERADORES LOGICOS |
+	+--------------------+
+ 		&& "y" (Devuelve true, si las dos condiciones son verdaderas)
+		|| "o" (Devuelve true, si una de las dos condicione es verdader)
+		!  "no"(Devuelve lo opuesto al resultado de la condicion)
+
+	+-------------------------+
+	| OPERADORES RELACIONALES |
+	+-------------------------+
+		>              Mayor
+		<              Menor
+		== o .equals() Igual
+		>=             Mayor o igual
+		<=             Menor o igual
+		!=             Distinto
+
+ +--------------------------+
+ | TIPO DE DATOS PRIMITIVOS |
+ +--------------------------+
+ Permiten almacenar valores
+
+	+-----------------+
+	| Numeros enteros |
+	+-----------------+
+		byte:  -128 / 127
+		short: -32768 / 32767
+		int:   -2147483648 / 2147483647
+		long:  -9223372036854775808 / 9223372036854775807
+
+	+------------------+
+	| Numeros con coma |
+	+------------------+
+ 		float:  -3.402823e38 / 3.402823e38
+ 		double: -1.79769313486232e308 / -1.79769313486232e308
+
+	+------------+
+	| Caracteres |
+	+------------+
+ 		String: "Cadena de caracteres"
+ 		Char:   "a" (Un caracter)
+
+	+--------------+
+	| Comprobacion |
+	+--------------+
+ 		bolean: true / false
+
+
+ +-------------+
+ | ESTRUCTURAS |
+ +-------------+
+	 +---------------------------+
+	 | 1. ESTRUCTURA DE DECISION |
+	 +---------------------------+
+		+---------------+
+		| CONDICIONALES |
+		+---------------+
+			if(condicion){
+				Cumple la condicion: Ejecuta este codigo
+			}else if(condicion){
+				No cumple la primera condicion: Ejecuta este codigo
+			}else{
+				No cumple ninguna condicion anterior: Ejecuta este codigo
+			}
+
+		+--------+
+		| SHITCH |
+ 		+--------+
+			switch (){
+ 			case valor1:
+				Si el valor es 1: Ejecuta este codico
+ 				break; (Salir)
+
+ 			case valor2:
+				Si el valor es 2: Ejecuta este codico
+ 				break; (Salir)
+	
+			default: Si el valor no es N ejecuta este codigo}
+
+ 	+-----------------------------+
+ 	| 2. ESTRUCTURA DE REPETICION |
+ 	+-----------------------------+
+ 		+--------------+
+ 		| a. BUCLE FOR |
+ 		+-------------+
+			for(int i=0 ; i<VarMaxima ; i++){
+						a. se ejecuta el codigo hasta VarMaxima}
+
+ 			int i=0;       CONTADOR: Incializa la variable y por cada vuelta, aumenta 1 valor i=1, i=2 ...
+
+ 			i<ValorMaximo  CONDICION DE PERMANENCIA: (true/false)
+						a. Cumple la condicion: Ejecuta el codigo
+						b. No cumple la condicion: Finaliza el buble
+
+	 		i++;           MODIFICADOR O PASO: Como contar lo ciclos: 
+						a. 1 en 1
+						b: 2 en 2
+						c: Creciente
+						d: Decreciente
+		+-------------+
+ 		| b. FOR EACH |
+ 		+-------------+
+ 			for(Object object : listaDeObjetos){
+				Por cada objeto del arreglo: Ejecuta el este codigo}
+
+ 		+----------+
+		| c. WHILE |
+	 	+----------+
+  			while(condicion){
+	 			Ejecuta el codigo siempre que cumpla la condicion}
+
+ +--------------------+
+ | PAQUETES - package |
+ +--------------------+
+ Contenedores donde se organizan las clases
+
+ +--------+
+ | CLASES |
+ +--------+
+	a.String
+	b.Integer
+	c.Float
+	d.Date
+	e.Scanner
+
+ 	Incian con mayuscula 
+ 	Almacenan valores
+
+ 	+-----------+
+ 	| a. STRING |
+ 	+-----------+
+ 		Valor incial por defecto: null
+			a. String nombre=null;    Cadena no inicializada. No puede utlizar metodos propios
+			b. String nombre="";      Cadena vacia
+			c. String nombre="Juan";  Cadena inicializada con el juan 
+
+ 		Realiza operaciones ya programadas llamadas (Metodos)
+ 		Colocando (nombre.) utiliza METODOS resueltos propios de la clase String
+ 
+ 		String nombre.   
+			a. .equals()      
+	    	  	b. .compateTo()   
+	    	  	c. .toUpperCase()
+
+ 		+--------------------+
+ 		| METODOS MAS USADOS |
+ 		+--------------------+
+			.equals()      Compara si un valor es IGUAL a otro (No se utiliza ==)
+			.compateTo()   Compara si un valor es mayor/menor a otro
+			.toUpperCase() Convierte en mayuscula todos los caracteres
+			.toChar()
+			.length()      Calcula la longitud de la cadena [Hola]:4
+			.charAt(0)     Obtiene un caracter 0 = H Primer caracter
+
+	+------------+
+ 	| b. INTEGER |
+ 	+------------+
+		Valor incial por defecto: null
+
+		Integer numero = 1;               Crear o instanciar objeto con valor incial 1
+		Integer numero = new Integer(1);  Definir objeto = Crear o instanciar objeto con valor incial 1
+
+ 	+----------+
+ 	| c. FLOAT |
+ 	+----------+
+		Valor incial por defecto: null
+
+ 		Float numero = 2.5f;		  Crear o instanciar objeto con valor incial 2.5
+ 		Float numero = new Float(0.5);	  Definir objeto = Crear o instanciar objeto con valor incial 0.5
+
+	 * 2.5f (f: para indicar que Float. Si no lo toma como Double)
+
+ 	+---------+
+ 	| d. DATE |
+ 	+---------+
+		Valor incial por defecto: fecha actual
+		Libreria de java/Importar clase: import java.util.Date;
+
+		Formato: YYYY-MM-DD
+			Año: 1990 + 120 : 2020
+			Meses: Inicia Enero = 0 / Diciembre = 11
+
+		Date fecha = new Date(120,11,5)
+
+ 	+------------+
+ 	| e. SCANNER |
+ 	+------------+
+		Libreria de java/Importar clase: import java.util.Scanner;
+		Clase: System
+
+			a. System.in   ENTRADA de datos para asignarla a una variable
+			b. System.out  SALIDA de datos System.out.print("Mostrarmensaje")
+
+		Scanner entrada = new Scanner(System.in);  Definir objeto = Crear o instanciar objeto (entrada)
+
+			entrada.
+				.nextByte()    Lee datos de tipo: byte
+				.nextShort()   Lee datos de tipo: short
+				.nextInt()     Lee datos de tipo: int
+				.nextLong()    Lee datos de tipo: long
+				.nextFloat()   Lee datos de tipo: float
+				.nextDouble()  Lee datos de tipo: double
+				.nextBoolean() Lee datos de tipo: boolean
+				.nextLine()    Lee datos de tipo: String (hasta el salto de linea) *
+				.next()        Lee datos de tipo: String (hastra el primer espacio o salto de linea)
+
+		+-------------------------+
+ 		| UTILIZACION DEL SCANNER |
+ 		+-------------------------+
+			+-------------------------------------------------------------+
+ 			| 1. DEFINIR E INSTANCIAR UN OBJETO DE TIPO SCANNER (netrada) |
+			+-------------------------------------------------------------+
+
+				Scanner entrada = new Scaner(System.in);
+	
+			+----------------------------------------+
+ 			| 2. DEFINIR LAS VARIABLES CON SUS TIPOS |
+			+----------------------------------------+
+
+				String nombre;
+				int edad;
+				float peso;
+
+			+-----------------------------------------+
+ 			| 3. PEDIR LOS VALORES PARA LAS VARIABLES |
+			+-----------------------------------------+
+
+				System.out.print("Ingrese su nombre: ");
+				nombre = entrada.nextLine;
+
+				System.out.print("Ingrese su edad: ");
+				nombre = entrada.nextInt;
+
+				System.out.print("Ingrese su peso: ");
+ 				nombre = entrada.nextFloat;
+
++-----------+
+| FUNCIONES |
++-----------+
+	a. TipoDeDatoDevuelto nombre (String parametro)
+		double calcularTotal(double importe, int canitdad);
+
+	b. void: Funciones que realizan acciones sin devolver nada
+		void mostrarMensaje(String mensaje)
+
+ 	+-----------------------+
+	| # FUNCION CON RETORNO |
+ 	+-----------------------+
+	 Incluye: return
+		int suma(int n1, int n2){
+		retunr n2,n2}
+
+ 	+---------------------+
+ 	| FUNCION SIN RETORNO |
+ 	+---------------------+
+		void mostrarMensaje(String mensaje){
+		system.out.println(mensaje);}
+
+ +-------+
+ | ARRAY |
+ +-------+
+	String []: Tipo primitivo o clase de objeto
+
+	Longitud fija: String[3]; Al instanciarlo se define el tamaño de la estructura
+
+
+	String[] nombres = new String[3];
+
+		nombres[0] = "Luciano";
+		nombres[1] = "Gabriel";
+		nombres[2] = "Greco";
+
+	System.out.printlin(nombre[1]); // Gabriel
+
+ * System.out.printlin(nombres[4]) = null - Provoca una excepcion
+
+	+---------------------+
+	| RECORRER EL ARREGLO |
+	+---------------------+
+ 		+--------+
+ 		| a. FOR |
+ 		+--------+
+			for(int i=0; i<nombre.length; i++);
+				System.out.println(nombre[i])
+ 		+----------+
+ 		| b. WHILE |
+ 		+----------+
+			int i=0;
+			while(i<nombre.length){	
+				System.out.println[i]);
+				i++;}
+
+ 		+-------------+
+		| c. FOR EACH |
+ 		+-------------+
+			for(String nombre : nombre)
+				Sistem.out.println(nombre);
+
+ +---------------+
+ | OBJETOS Y UML |
+ +---------------+
+ OBJETOS: tiene Caracterisiticas y Responsabilidades que dependen del contexto
+
+ 	a. Caracterisitas: Atributos
+ 	b. Responsabilidades: Metodos
+
+ +-------------------------------+
+ | # PREGUNTAS DE RECONOCIMIENTO |
+ +-------------------------------+
+	a. ¿Que objetos participan? (Contexto)
+	b. ¿Cuales son sus atributos? (Contexto)
+	c. ¿Cuales son sus responsabilidades? (Contexto)
+
+ +------------+
+ | LAS CLASES |
+ +------------+
+	vs. Pueden ser instanciadas
+	vs. No puede contener motodos abstractos
+	vs. Tiene plena implementacion de su comportamiento
+
+	CLASE: Modelado de objeto con sus Atributos y Metodos
+	OBJETOS E INTANCIAS: Representacion de objetos concretos (perro)
+
+		Clase: Veterinaria
+		Objeto: Veterinario
+		Atributo: Nombre, apellido, matricula
+		Responsabilidad: recibirMacota, curar, hacerDiagnostico
+
+ +-------------------------+
+ | UML ATRIBUTOS Y METODOS |
+ +-------------------------+
+ UML: Lenguaje Unificado de modelado - Unified Modeling Language
+ Software: https://app.diagrams.net/
+
+	+-----------------------+
+	|  Verinario            | CLASE
+	+-----------------------+
+	|- nombre: String       | ATRIBUTOS: + atributo: Tipo
+	|- apellido: String     |
+	|- ValorConsulta: float |
+	+-----------------------+
+	|+ hacerRecibo():void   | METODOS: + metodo(parametro): Tipo
+	|+ facturar():void      |
+	+-----------------------+
+
+ +-------------------------------+
+ | ENCAPSULAMIENTO O VISIVILIDAD |
+ +-------------------------------+
+ Para ocultar las propiedades y comportamiento interno de los objetos
+
+	+ Publico:   Cualquier clase con visibilidad al clasificador puede utilizar las caracacteristicas
+	- Privado:   Solo el propio clasificador puede utilizar la caracteristica
+	# Protected: Cualquier descendente del clasificador puede usar la caracterisitca
+
+ Atributos: Privados
+ Metodos: Publicos (para ver o modificar las caracteristicas de los objetos)
+
+ +---------------------------+
+ | METODOS GETTERS Y SETTERS |
+ +---------------------------+
+	+--------+
+	| a. GET | Muestra el valor de un atributo.  
+	+--------+ 
+		public String getNombre(){return nombre;}
+
+	+--------+
+	| b. SET | Cambia el valor de un atributo. Son de tipo void
+	+--------+
+			     		    +---------------------+
+ 		public + void + setNombre + |(TipoDeDato Atributo)|-> Aca Se produce la modificacion	
+			     		    +---------------------+
+	
+		public void setNombre(String nombre){this.nombre = nombre; }
+
+ +--------------------+
+ | METODO CONSTRUCTOR |
+ +--------------------+
+	+-----------------+
+ 	| JAVA CONSTRUCTOR|
+	+-----------------+
+		this.Atributo   = Hace referencia al atributos al cual se le va a signar el valor recogido de la instancia
+		nombreParametro = Valores que recibe del objeto o instancia para asignarlo al atributo
+
+			+---------------------------+
+			| a.CONSTRUCTOR DE LA CLASE |
+			+---------------------------+ 
+				public nombreClase(tipoDeDato, nombreParametro){
+ 				this.Atributo = nombreParametro;
+
+			+-----------------------------------------------------+
+			| b.CONSTRUCTOR DE LA CLASE + INSTANCIA DE OTRA CLASE |
+			+-----------------------------------------------------+
+				private String patente;
+				private String marca;
+				private String modelo
+				private Motor motor; ---> Definido pero NO instanciado
+
+
+				public Auto(String patente, String marca, String modelo){
+					this.patente = patente;
+					this.marca = marca;
+					this.modelo = modelo;
+					motor = new Motor();} --> Lo instanciamos en el constructor
+
+
+			+--------------------------------------------------------------------------+
+ 			| c. CONSTRUCTOR DE HERENCIA = CONSTRUCTORSUBCLAE + CONSTRUCTOR SUPERCLASE |
+			+--------------------------------------------------------------------------+
+    				
+				public CuentaCorriente(String numero, double saldo){
+            				--->super(numero,saldo);
+        				descubierto=1000;
+   	
+	+----------------+
+ 	| UML CONSTRUCTOR|
+	+----------------+
+		+-------------------------------------+
+		|             Estudiante              |
+		+-------------------------------------+
+		|-nombre: String                      |
+		|-edad: Int                           |
+		+-------------------------------------+
+		|+Estudiante(String nombre, int  edad)| CONSTRUCTOR
+		|+Metodos			      |
+		+-------------------------------------+
+
+ +----------------+
+ |NOMBRES EN JAVA |
+ +----------------+
+ 	a. atributosEnJava
+ 	b. metodosEnJava
+ 	c. objetosEnJava
+ 	d. ClasesEnJava
+ 	e. paquetesenjava
+ 	f. LAS_CONSTANTES
+
+ +-----------+
+ | INSTANCIA |
+ +-----------+
+  	asignamosObjeto = new instanciamosElObjeto;
+
+ 	a. Articulo articulo = new Articulo(nombre"...",apellido"...")
+
+ 	b. Chofer chofer = new Chofer(nombre "Luciano", apellido "Greco", new Auto(patente "abc123", marca"Fiat", modelo"Duna") );
+
+	ERROR - Modulo1 - C5A - Clases - La clase
+
+ +-----------------------------+
+ | VARIABLE Y METODOS DE CLASE |
+ +-----------------------------+
+
+	 +-----------------------------------------+
+	 |                  Camion                 |
+	 +-----------------------------------------+
+	 |- marca: String                          |
+	 |- patente:String                         | Atributo de la clase (Subrayado)
+	 |- valorCombustible: double               | static private double valorCombustible 
+	 |  ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨              | 	
+	 +-----------------------------------------+
+	 |+ Camion(Sting marca, String patente)    |
+	 |+ transportar()                          | 
+	 |+ gastoCombustible(int litros)           | Metodo de la clase (Subrayado)
+	 |+ cambiarPrecioCombustible(double precio)| Static public voidcambiarPrecioCombustible(double precio){ Camion.valorCombustible=precio;}
+	 |  ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ | 	
+	 +-----------------------------------------+  
+     
+ +-------+
+ |STATIC | Podemos utilizar el metodo de la clase, utilizando la clase y no el objeto
+ +-------+   Camion.cambiarPrecioCombustible(100);
+
+	
+ +------------+
+ | RELACIONES |
+ +------------+
+ 		+--------------+
+ 		| a. UNO A UNO |
+ 		+--------------+
+	 		+-----------------------+         +--------------------+
+	 		| Auto                  |         | Motor              |
+	 		+-----------------------+ ──────> +--------------------+
+	 		|- velicidadMaxima: int |         |-fabricante: String |
+	 		|- marca: String        |         |-potencia: String   |
+			+-----------------------+         +--------------------+
+	 		public class Auto { 
+				private Motor motor;}
+	
+ 		+-----------------+
+ 		| b. UNO A MUCHOS |
+ 		+-----------------+
+	 		+-----------------------+         +-------------+
+	 		| Auto                  |         |Rueda        |
+	 		+-----------------------+ ──────> +-------------+
+	 		|- velicidadMaxima: int |         |-tamañp: int |
+	 		|- marca: String        |         +-------------+
+	 		+-----------------------+        
+	 		public class Auto { 
+				private Rueda[] ruedas;}
+
+ 		+--------------------+
+ 		| c. MUCHOS A MUCHOS |
+ 		+--------------------+
+
+ 			+---------------+
+			| MULTIPLICIDAD | Indica la cantidad de instancias que se pueden relacionar
+			+---------------+
+				Persona 1──────>1 Pulmon = 1 persona tiene 1 cabeza
+				Persona 1──────>* Dedos = 1 persona tiene 5 dedos
+				Persona *──────>1 Pelo = 5 Dedos tiene estan en 1 Mano
+
+
+ 			+---------------------------+
+ 			| NAVEGACION Y CARDINALIDAD |
+ 			+---------------------------+
+				+------------+
+				| NAVEGACION | Direccion o sentido de la relacion
+				+------------+
+						──────> Direccional
+						─────── Bidireccional
+
+				+--------------+
+				| CARDINALIDAD |
+				+--------------+
+					UNO: 1 / nada
+  					MUCHOS: n / N / * / List<>
+
+ 	+---------------------+
+ 	| TIPOS DE RELACIONES |
+ 	+---------------------+
+		+----------+
+ 		| Tiene un |
+		+----------+
+ 			1. Asociacion 
+					a. Agregacion        <>──────> (Independiente)    Grupo5     <>──────>  Alumnos
+ 						b. Composicion       ♦───────> (Dependiente)      Matematica ♦───────>  Temas de Matematica
+				a. Uso (Parametro)   --------> (Utilidad)         Tocadisco  ────────>  Disco  x
+		+-------+
+  		| Es un |
+		+-------+
+			2. Herencia
+ 				a. Generalizacion
+					a. Herencia          ────extends───>
+
+ 				b. Especializacion
+					a. Interface         ------>
+
+ 	+---------------+
+ 	| 1. ASOCIACION | Conoce / tiene un
+ 	+---------------+
+ 			
+			+--------------------------------+ a     b +------------------+
+			|           Persona              |         |     Direccion    |
+			+--------------------------------+ ──────> +------------------+
+			|- nombre: String                |         |- calle: String   |
+			| DireccionResidencia: Direccion |         |- nuemro: Integer |
+			+--------------------------------+	   +------------------+
+
+			+---------------------+
+			| a. RELACION DE USO  |
+			+---------------------+
+				Usa un
+				Metodo:(ClaseParametro)
+
+				+-------------------+          +-------+
+				| Tocadisco         |          | Disco |
+				+-------------------+ ------>  +-------+
+				|reproducir:(disco) |          |       |
+				+-------------------+	       +-------+
+
+
+			+---------------+
+			| b. AGREGACION | Existencia Independiente
+			+---------------+ 
+				Usa o Es parte de - forma debil
+
+        			+----------+ 1<>──────>n Rueda
+				| Bicileta | 1<>──────>n Pedal
+				+----------+ 1<>──────>n Freno
+
+
+					+----------------+ a          b +---------------+
+					| Computadora    | <>──────*>   | Mouse         |
+					+----------------+              +---------------+
+					|- marca: String |              |- tipo: String |
+					+----------------+              +---------------+
+					public class Computadora{
+						private Mouse mouse;}
+ 			            
+			+----------------+
+			| c. COMPOSICION | Existencia Dependiente
+			+----------------+
+				Compuesta 
+
+				+---------+	       +----------+
+				| Empresa | 1♦──────>n | Empleado |
+				+---------+	       +----------+
+
+					+------------------------+        +-----------------+
+					|        Persona         | ♦----> |     Organos     |
+					+------------------------+        +-----------------+
+					|- Organos: List<Organo> |        |- nombre: String |
+					+------------------------+        +-----------------+
+
+
+ 	+--------------------------------+
+ 	| 2. HERENCIA GENERALIZACION UML |  ────Extens────>
+ 	+--------------------------------+
+ 		Hereda los atributos y responsabilidades de la super clase
+
+		    	+----------------+
+		    	|     Perro      |Super Clase
+		    	+----------------+
+		    	|-nombre: String |
+		    	|-edad: int      |
+		    	+----------------+
+			|+jugar()        |
+			|+ladrar()       |
+			+----------------+
+	                    |        |
+		      es un ↓        ↓ es un
+		     +---------+   +----------+
+     		     | Caniche |   | Doberman |SubClase
+     		     +---------+   +----------+
+
+
+		+-------------------+
+		| HERENCIA MULTIPLE | No es considerada una buena practica
+		+-------------------+
+ 			+---------------+
+			| MALA PRACTICA | Una clase hereda de varias clases padres
+			+---------------+
+					SerVivo  Persona
+	             	                     |    |
+	   	    	    	            Empleado
+			+-----------------+
+ 			|BUENAS PRACTICAS | Se reemplaza por herencia lineal
+			+-----------------+
+
+					SerVivo
+	   	    	           	   |
+					Persona
+	   	    	           	   |
+					Empleado
+
+ 		+----------------------------------+
+ 		| GENERALIZACION Y ESPECIALIZACION | Proceso de abstraccion
+		 +----------------------------------+
+		 	a. Generalizacion: Pasar atributos y responsabilidades de la SuperClase a la SubClase
+		 	b. Especializacion: Crear una clase con atributos y responsabilidaeds que solo es compatible con una SubClase especifica
+
+ 		+------------------------------+
+ 		| ECAPSULAMIENTO Y LA HERENCIA |
+ 		+------------------------------+
+ 		a. +public:    Accesible desde cualquier clase
+ 		b. -private:   Limita el acceso de cualquier clase. Solo se puede acceder con getters y setter
+		c. #protected: Accesible para la subClase y Limitados para otras clases 
+
+		+--------------------+
+ 		| FIRMA DE UN METODO |
+ 		+--------------------+
+ 			Identidad de un metodo
+ 			En una misma clase, No puede haber dos metodos con la misma firma 
+
+ 			nombre -> cantidad -> tipoDato -> ordenDeParametro
+
+				+sumar(numero1: double, numero2 double):double
+				+sumar(numero1: int, numero2 int):int
+
+ 			+---------------------------+
+			| SOBRECARGA DE METODOS UML |
+ 			+---------------------------+
+ 				DIFERENTE FIRMA: Para reconocer comportamiento de un metodos con el mismo nombre y poder sobrecargarlo
+
+					+String ladrar()
+					+ladrar(intensidad:int) - Sobrecargado
+
+ 				Pueden devolver cosas diferentes o lo mismo
+
+ 			+---------------------------+
+ 			| SOBREESCRITURA DE METODOS |
+ 			+---------------------------+
+ 				Sobreescribir un metodo. Mismo nombre, distinto comportamiento
+
+ 				MISMA FIRMA:
+	     	   		   	     +-----------+
+	   		  	             |   Perro   |
+	     			             | +ladrar() |
+	     			             +-----------+
+	                                        |      |
+       				       +----------+ +----------+
+       		 	  	       | Caniche  | | Doberman |
+       		 		       |+ladrar() | | +ladrar()| -> Sobre Escrito
+       		  		       +----------+ +----------+
+
+ 		+---------------+
+ 		| HERENCIA JAVA |  Herencia: extends
+ 		+---------------+
+
+			+------------------------+
+ 			| CONSTRUCTOR SUPERCLASE |
+			+------------------------+
+				public Cuenta(String nombre, double saldo){
+				 	this.nombre=nombre;
+				 	this.saldo=saldo; }
+
+			+----------------------------------------------------------------------+
+ 			| CONSTRUCTOR DE HERENCIA= CONSTRUCTORSUBCLAE + CONSTRUCTOR SUPERCLASE |
+			+----------------------------------------------------------------------+
+    			public CuentaCorriente(String numero, double saldo){
+            			--->super(numero,saldo);
+        			descubierto=1000;
+    
+
+		+--------------------------------+
+ 		| SOBREESCRITURA DE METODOS JAVA |
+ 		+--------------------------------+
+ 			@Override: Anula el comportamiento anterior del metodo dando otra forma de resolver
+
+			+--------------+
+			| CLASE ANIMAL | <<Abstracta>>
+			+--------------+
+				public void hacerRuido(){} <<Metodo Abstracto>>
+
+				+------------+
+				| CLASE GATO |
+				+------------+
+					@Override
+					public void hacerRuido(){
+	 					system.out.print("miau")} / El comportamiento se puede cambiar por cualquier cosa
+
+				+-------------+
+				| CLASE PERRO |
+				+-------------+
+					@Override
+					public void hacerRuido(){
+	 					system.out.print("guau")}
+ 	
+		+--------------+
+ 		| CLASE OBJECT |
+ 		+--------------+
+ 			Todas clase hereda de la clase Object y este tiene metodos que se deben sobreescribirce para poder reutilizarlos
+
+			+----------------+
+ 			| METODOS OBJECT |
+ 			+----------------+
+				a. String toString()
+				b. int hashCode()
+				c. boolean equals(Object o)
+
+				+-------------+
+				| a. toString | Metodo heredado de object y debemos sobrescribirlo
+				+-------------+
+					Intellij: Lo hace solo
+
+						public class Empleado{
+						private String nombre;
+						private String legajo;}
+
+					Los ojetos que instanciamos tendran este metodo
+
+						Empleado nuevoEmpleado = new Empleado("Luciano","1111")
+						System.out.println(nuevoEmpleado.toString());
+						SALIDA:	com.company.Empleado@1540e19d -> Representa el objeto con un texto
+ 
+	  				+--------------------------+
+	  				|SOBREESCRIBIR .toString() | -> Devuelve la cadena que queremos mostrar
+	  				+--------------------------+
+						@Override
+						public String toString(){
+						return "nombre: "+ nombre + "\n"+
+		       					"legajo: "+ legajo;}
+
+						SALIDA: nombre: Luciano
+						legajo: 1111
+
+
+				+----------------+
+				| b. .hashCode() | Metodo heredado de object 
+				+----------------+
+					Devuelve un numero que identifica a cada objeto
+
+					+--------------------------+
+					|SOBREESCRIBIR .hashCode() | -> Devuelve Codigo identificador
+					+--------------------------+
+						Para generar un numero identificador se utiliza numeros primos "31"
+
+ 					Los String generan el hashCode multiplicando sus caracteres
+
+						@Override
+						public int hashCode(){
+						int = hash=31;
+						hash= hash* nombre.hashCode();
+						hash= hash* legajo.hashCode();
+						return hash;}
+	
+						Empleado nuevoEmpleado = new Empleado("Luciano","1111")
+						System.out.println(nuevoEmpleado.hashCode());
+						SALIDA:	-1480218112 -> Codigo identidificador
+
+
+				+----------------------+
+				| c. .equals(Object o) | Metodo heredado de object 
+				+----------------------+
+					Al crear un objeto no almacenanos variables de tipo objeto 
+					Creamos referencia del lugar (RAM) donde estan almacenados los valores de los atributos
+					Por esto el operador == no se utiliza para comparar igualdad entre objetos
+					Estariamos comparando referencias
+
+  					+---------------------------------+
+  					|SOBREESCRIBIR .equals(Object o)) | -> Comparar objetos
+  					+---------------------------------+
+  						Recibe como parametros un objeto
+
+						@Override boolean equals(Object o){....}
+
+ 			+-----------------------------------------+
+ 			| VERIFICAR SI (Objecto o) Es un empleado |
+ 			+-----------------------------------------+
+
+				a. .instanceof: Compata instrancias
+				b. .getClass(): Compara Clase
+
+ 				+---------------+
+ 				|a. .instanceof | Compara dos instancias
+ 				+---------------+
+    
+					@Override
+					public boolean equals(Object o){
+						if(o==null)                  --> Por ser objeto podria tener valor nulo
+	     						return false;
+						if(!(o instanceof Empleado)) --> (Object o) es una instancia de (Empleado) - ¿son distintos?
+             						return false; //        --> false: No son iguales
+						else{
+						}			     --> true: Continua la comprobacion	
+						}
+
+ 				+----------------+
+ 				| b. .getClass() | Compara la clase a la que pertenecen los objetos
+ 				+----------------+
+
+					@Override
+					public boolean equals(Object o){
+						if(o==null)                  --> Por ser objeto podria tener valor nulo
+	     						return false;
+						if(this.getClass() != o.getClass()) --> Esta clase es igual o distinta a la de (Object o)
+             						return false; //        --> false: No son iguales
+						else{
+						}			     --> true: Continua la comprobacion	
+						}
+
+ 		+---------+
+ 		| CASTING | transforma y Comprueba los valores de los atributos
+ 		+---------+
+
+			@Override
+			public boolean equals(Object o){
+				if(o==null)                 
+	     				return false;
+				if(!(o instanceof Empleado)) 
+             				return false; //        
+				else{
+	             		Empleado empleadoAux=(Empleado)o;                 --> Casting: transforma a "o" en objeto tipo Empleado y poder usar sus metodos
+		    		 return
+		     		this.getLegajo().equals(empleadoAux.getLegajo()); --> Legajo es de tipo String no se puede usar ==
+				}			     
+				}
+
+		+------------------------+
+		| CLASES ABSTACTAS - UML |
+ 		+------------------------+
+			Puede tener constructores para reutilizar el codigo
+			Sirve para agrupar Subclases permitiendo compartir caracteristicas y responsabilidades 
+
+			vs. Tiene implementacion parcial o nula
+			vs. No puenden ser instnaciadas
+			vs. Puede o no contener metodos abstractos (Utilizar solo los atributos)
+
+			Identificarlas: 
+				a. Cursiva
+				b. <<Abstracta>>
+
+		        	  +--------------------+
+		         	  |    <<Abstracta>>   |
+		         	  |       Mascota      |
+		         	  +--------------------+
+		         	  |- Atributos 	       |
+		         	  +--------------------+
+		         	  |+ abstract ladrar() | Metodo Abstracto - Sobreescribirlos
+		         	  +--------------------+
+		                          |        |
+   	             	 	+-----------+   +-----------+
+  	             		|  Caniche  |   | Doberman  |
+  	              		+-----------+   +-----------+
+  	              		| +ladrar() |   | +ladrar() | --> Sobreescribirlos
+  	              		+-----------+   +-----------+
+
+
+ 			+-----------------------------------+
+ 			| CLASE Y METODOS ABSTRACTOS - JAVA |
+ 			+-----------------------------------+
+				+--------------------+
+				| a. CLASE ABSTRACTA |
+				+--------------------+ 
+	 				public abstract class Perro{}
+				+---------------------+
+				| b. METODO ABSTRACTO |
+				+---------------------+ 
+	 				public abstract void hacerRuido(); - No colocar {} ya que no tienen un comportamiento establecido
+					+-------------+
+					| c. SUBCLASE | Dejan de ser abstractos
+					+-------------+
+
+		+-----------------------+
+ 		| BINDING - VINCULACION |
+	 	+-----------------------+
+
+	 		Bind: referencia "=" Objto
+
+				Doberman perro = new Doberman()
+      	       		       [ReferenciaLugar]    [CreaObjeto]
+
+			+----------------------------------------+
+			| VINCULACION DINAMICA - dynamic binding |
+			+----------------------------------------+
+				Utilizamos una referencia para distintos objetos
+				Referencia y Objeto pueden ser de distintos tipo.
+
+				En este caso son del mismo tipo: Doberman
+
+			      	      	 	      	       Objeto
+                           	                    	     /-------\
+					Doberman perro = new Doberman()
+               				\------------/
+     	      	      	              Referencia/Variable  
+
+
+  				a. OBJETO -> relacion del tipo "es un" -> REFERENCIA
+
+					Referencia <+-------"Es un"<-----+ Objeto
+		    				    |	                 |
+	        				Doberman perro = new Doberman(); -----> mismo tipo
+       
+
+  				b. 
+					Referencia <+-------"Es un"<-----+ Objeto
+		    	    			    |	                 |
+	          	  			Perro perro = new Doberman(); -----> Distinto tipo
+
+
+ 				c. Toda clase hereda de Object
+
+					Referencia <+-------"Es un"<-----+ Objeto
+		            			    |	                 |
+	         	 		        Object perro = new Doberman(); -----> Distinto tipo
+
+
+  				d. ERROR. No cumple la relacion del tipo "es un"
+
+	    		  			 +-------"Es un"<-----+
+	                   			 V	              |
+	 	         			Doberman perro = new Perro(); -----> Perro no siempre es dobeman
+
+
+ 		+--------------+
+ 		| POLIMORFISMO |
+ 		+--------------+
+				Capacidad de un objeto de funcionar de muchas formas
+
+			Perro p;               / (dynamic binding)
+
+				p = new Doberman(); 
+				p.ladrar();            / p ladra como doberman
+
+				p = new Caniche();
+				p.ladrar();            / p ladra como caniche
+
+
+			Las modificaciones futuras en las nuevas subclases no deberian afectar el codigo
+			Si el codigo usa perro, las nuevas subclases de perro funcionaran correctamente
+
+		+------------------+
+		| CASTING - Casteo |
+		+------------------+
+			+-----------------------+
+			|        Doberman       |
+			+-----------------------+
+			|- Atributos            |
+			+-----------------------+
+			|+ morderComoDoberman() |
+			+-----------------------+
+
+
+			a. Para invocar los metodos propios de Doberman
+
+				Perro perro = new Doberman();
+		
+					perro.ladrar();
+
+					((Doberman)perro).morderComoDoberman();
+        				|----Casteo-----|
+
+			b. Referencia tipo Object
+
+				Object perro = new Doberman();
+		
+					((Perro)perro).ladrar();
+					|---Casteo---|
+
+					((Doberman)perro).morderComoDoberman();
+        				|----Casteo-----|
+
+
+			C. CASTEO DE compareTo(Objec o)
+
+					@Overrride
+					public int compareTo(Object o){        |-Casteo-|
+						return this.cantidadCamarote - ((Yate)o).getCantidadCamarote();}
+
+
+ 	+-------------------------------+
+ 	| 3. INTERFACE - ESPECIFICACION | Herencia de Metodo ----------->
+ 	+-------------------------------+
+ 		Java: implements
+
+ 			Una CLASE, puede heredar muchas interfaces
+ 			No tienen atributos
+ 			No nos permiten definir instancias
+
+ 		Contrato: Agrupa las clases a partir de comportamientos obligando a implementar sus metodos
+
+  		+---------+
+ 		|RELACION |
+		+---------+ 
+	  		a. "es un" - 
+	  		b. UML: <<interface>> Lineas punteadas ----
+          		c. Realizar vinculacion y Polimorfismo
+
+ 		+--------+
+ 		| METODO | 
+		+--------+ 
+	 		a. Todos son abstractos - 
+	 		b. No necesita aclararce 
+	 		c. Sobreescribirlos
+ 
+	  	     		    +----------------+    +---------------+
+	 	     		    | <<Interface>>  |    | <<Interface>> |
+		     		    |	Imprimible   |    |   Scaneable   |
+	 	     		    +----------------+    +---------------+
+	 	     		    |- MetodosImp()  |    |-MetodoScan()  |
+		     		    +----------------+    +---------------+
+			 		 |       |               |
+				+--------+       +------+ +------+
+				|			| |
+			+----------------+	+----------------+     
+			| ArchivoWord    |	| ArchivoPshop   |         
+			+----------------+	+----------------+
+			|- Atributos     |	|- Atributos     |
+			+----------------+	+----------------+
+			|- MetodosImp(w) |	|- MetodosImp(P) | Abstractos - Sobreescribirlos
+			+----------------+	+----------------+
+
+
+  		+---------------------------+
+  		| POLIMORFISMO DE INTERFACE | Imprimible.imprimir(); 
+  		+---------------------------+
+
+		Referencia <+-------"Es un"<-----+ Objeto
+		            |	                 |
+	     	     Imprimible imprimir = new ArchivoWord(); 
+			Imprimible.imprimir(); 
+
+
+		Referencia <+-------"Es un"<-----+ Objeto
+		            |	                 |
+	     	     Imprimible imprimir = new ArchivoPshop(); 
+			Imprimible.imprimir(); 
+
+  		+----------------+
+  		| INTERFACE JAVA |
+  		+----------------+
+			+-------------------------------------------+------------------------------------------+
+			| INTERFACE CUIDADOR                        | INTERFACE LADRADOR                       |
+			|	public interface Cuidador{          |    	public interface Ladrador{     |
+			| 	  public void String custodiar();   |   	  public void String ladrar(); |
+			| 	}				    |           }                              |
+			+-------------------------------------------+------------------------------------------+
+
+			+----------------+
+			| CLASE DOBERMAN |
+			+----------------+
+ 				public class Doberman implements Cuidador, Ladrador{
+ 	
+   					public void String custodiar(){
+         					return “estoy atento custodiando la casa”;}    // Interface Cuidador
+
+   					public void String ladrar(){                    
+        					return “Guau! Guau!”;}                         // Interface Ladrador
+
+			+------------+
+			| CLASE LOBO |
+			+------------+
+ 				public class Lobo implements Ladrador{
+   					public void String ladrar(){
+        					return “guau! los lobos también ladramos”;}     // Interface Ladrador
+	
+			+------+
+			| MAIN |
+			+------+
+				+----------+
+				| DOBERMAN |
+				+----------+
+					ladrador = new Doberman(); //ladrador es ahora del tipo Doberman()
+    					System.out.println(ladrador.ladrar()); //Polimorfismo
+
+				+------+
+				| LOBO |
+				+------+
+					ladrador = new Lobo(); //ladrador es ahora del tipo Lobo()
+    					System.out.println(ladrador.ladrar()); //Polimorfismo
+
+
+ 		+----------------------+
+ 		| INTERFACE COMPARABLE | implements Comparable con Metodo compareTo(Object o)
+		+----------------------+
+			Paquete: import java.lang
+
+ 			Implemetar interface: implements Comparable
+
+			(Object o) = Objeto que se quiere comparar 
+	
+			a. Igual a Cero: Objeto que invoca el metodo IGUAL que (Object o)
+			b. Mayor a cero: Objeto que invoca el metodo MAYOR que (Object o)
+			c. Menot a cero: Objeto que invoca el metodo MENOR que (Object o)
+
+
+									   +----------------------------+ 	
+									   |        <<Interface>>       | 	
+									   |         Comparable         | 	
+									   +----------------------------+ 	
+									   | +comparaCon(Object o): int | REEMPLAZADA
+									   +----------------------------+ 	
+              			     							|
+											| 
+										
+			+----------------------------+		    	   +---------------------------+ 	
+			|        Pimiento            |		       	   |        <<Interface>>      | JAVA:	
+			+----------------------------+	-----------------> |         Comparable        | 
+			|- tipo: String              |		       	   +---------------------------+ 	
+			|- color: String             |			   | +compareTo(Object o): int | Metodo comparteTo()
+			|- tamaño: double            |			   +---------------------------+ 	
+			|- peso: double              |      
+       		      	| +compareTo(Object o): int  | 
+			+----------------------------+
+ 		
+
+			+------------------------+
+			| IMPLEMENTACION EN JAVA |
+			+------------------------+
+			import java.lang
+
+			public class Pimineto implements Comparable{
+
+				private String tipo;
+				private String color;
+				private double tamaño;
+				private double peso;
+
+
+				a. public Pimiento(){}
+
+				public int compareTo(Object o){
+
+					pimineto p2 = (Pimiento) obj;      /
+					int respuesta = 0;
+
+					if(this.getPeso() > p2.getPeso())
+					respuesta = 1;
+
+					if(this.getPeso() > p2.getPeso())
+					respuesta = -1;
+
+					return respuesta;}
+
+				b.	@Overrride
+					public int compareTo(Object o){        |-Casteo-|
+						return this.Peso - ((p2)o).getCantidadCamarote();}
+
+			+------+
+			| MAIN | 
+			+------+
+			public void main(String args[]){
+				Pimiento p1 = new Pimiento();
+
+		 			p1.setColor("amarillo");
+		 			p1.setPeso(200);
+
+				Pimiento p2 = new Pimiento();
+	
+		 			p2.setColor("rojo");
+		 			p2.setPeso(150);
+		
+				if(p1.compareTo(p2) > 0){
+					System.out.print("Pimiento amarillo es mayot que el rojo")
+				}else If(p1.compareTo(p2) < 0){
+					System.out.print("Pimiento rojo es mayor que el amarillo")
+				}else{
+					System.out.print("Pimiento rijo es igual al amarillo");}
+
+
++------------------------------------+
+| GUARDAR PROYECTO INTELLIJ COMO ZIP |
++------------------------------------+
+file / export / project to file zip / nombre y apellido
+
+
+
++-------------+
+| COLECCIONES |
++-------------+
+
+	+------------------+
+	| 1. <<interface>> |
+	|     Collection   | Almacena grupo de elementos
+	+------------------+
+			+---------------------------+
+			| METODOS DE <<collection>> |
+			+---------------------------+
+				1. .add(Object o)		Agrega elemento
+				2. .add(Object o, int pos)	Agrega elemento (posicion determinada)
+				3. .remove(Object o)		Quita elemento
+				4. .remove(int pos)		Quita elemento (posicion determinada)
+				5. .get(int pos)		Obtiene elemento (posicion determinada)
+				6. .size()			Conocer cantidad elemento 
+
+
+	
+		+---------------+
+		| <<interface>> |	No almacena valores repetidos ni nulos
+		|      LIST	| 	Define la sucesion de elemento 
+		+---------------+
+				+-------------------+
+				| METODO COLLECTION | (Object o, int pos)
+				+-------------------+
+					+----------------------+
+					| a. Agregar elementos |
+					+----------------------+
+					
+					List nombres = new ArrayList();
+						nombres.add("Juan");
+						nombres.add("Mario");
+						nombres.add("Carlos");
+						nombres.add("Diego");
+						nombres.add("Marcelo"); |
+						nombres.add("Marcelo"); | ERRPR: No Almacena valores repetidos ni nulos
+
+			+--------------+
+			| 1. ArrayList | 	
+			+--------------+
+
+				List nombres = new ArrayList();
+
+				+-------------+
+				|   nombres   | RESPETA EL ORDEN DE INSECION
+				+-------------+
+				| 0 | Juan    |
+				| 1 | Mario   |
+				| 2 | Carlos  |
+				| 3 | Diego   |
+				| 4 | Marcelo |.size(5)
+				+---+---------+
+
+			+---------------+
+			| 2. LinkedList | 		
+			+---------------+			
+
+				List nombres = new LinkedList();
+
+				+-------------+
+				|   nombres   | ALMACENA EN LA MITAD DE LA LISTA
+				+-------------+
+				| 0 |         |
+				| 1 |	      |
+				| 2 | Carlos  |
+				| 3 | Diego   |
+				| 4 | Marcelo |.size(5)
+				+---+---------+
+
+
+		+---------------+
+		| <<interface>> |	No almacena valores repetidos ni nulos
+		|      SET	|	
+		+---------------+
+				+-------------------+
+				| METODO COLLECTION | (Object o)
+				+-------------------+
+					a. .add(Object o)		Agrega elemento
+					b. .remove(Object o)		Quita elemento
+					c. .size()			Conocer cantidad elemento 
+
+					+----------------------+
+					| a. Agregar elementos |
+					+----------------------+
+
+					Set nombres = new HashSet(); 
+						nombres.add("Juan");
+						nombres.add("Mario");
+						nombres.add("Carlos");
+						nombres.add("Marcelo"); |
+						nombres.add("Marcelo"); |-> ERROR: No almacena valores repetidos ni nulos
+
+			
+					+----------------------+
+					| b. Obtener elementos |
+					+----------------------+
+
+					boolean encontrado = false;
+					String nombre = false;
+					Iterator it = nombres.iterator();
+					
+					While(it.hasNext() && !encontrado){
+						nombre = (String) it.next();
+
+						if(nombre == "Carlos")
+						  encontrado = true
+
+						}
+
+					System.out.println("Encontrado a "+nombre);
+
+			+------------+
+			| 1. HashSet |		
+			+------------+
+
+				Set nombres = new HashSet(); 
+
+				+-------------+
+				|   nombres   | NO RESPETA EL ORDEN DE INSECION
+				+-------------+
+				|   | Marcelo |
+				|   | Carlos  |
+				|   | Juan    |
+				|   | Mario   | .size(4)
+				|   |    X    |
+				+---+---------+
+				
+
+			+------------------+
+			| 2. LinkedHashSet |	Menos permformante HashSet
+			+------------------+
+
+				Set nombres = new LinkedHashSet(); 
+	
+				+-------------+
+				|   nombres   | RESPETA EL ORDEN DE INSECION
+				+-------------+
+				|   | Juan    |
+				|   | Mario   |
+				|   | Carlos  |
+				|   | Marcelo | .size(4)
+				|   |    X    | 
+				+---+---------+
+
+			+------------+
+			| 3. TreeSet | Hereda de la clase SortedSet		
+			+------------+
+
+				Set nombres = new TreeSet(); 
+
+				+-------------+
+				|   nombres   | ORDENA SEGUN SU VALOR -  String en orden alfabetico
+				+-------------+
+				|   | Carlos  |
+				|   | Juan    |
+				|   | Marcelo |
+				|   | Mario   | .size(4)
+				|   |    X    |
+				+---+---------+
+
+	+------------------+
+	| 2. <<interface>> |	
+	|        MAP   	   |	CLAVE UNICA POR CADA VALOR
+	+------------------+
+
+			+------------+
+			| METODO MAP |
+			+------------+
+				a. .put(Object key, Object value)	Agrega elemento
+				b. .get(Object key)			Obtener elemento por su clave
+				c. .remove(Object key)			Quitar elemento por su clave
+				d. .size()				Conocer la cantidad de elementos 
+
+					+----------------------+
+					| a. Agregar elementos |
+					+----------------------+
+
+					Map nombres = new HashMap();
+						nombres.put(29888999,"Juan");
+						nombres.put(30888999,"Mario");
+						nombres.put(27888999,"Carlos");
+						nombres.put(40888999,"Marcelo"); |
+						nombres.put(50888999,"Marcelo"); | Permite valores Duplicados Se guia por la clave
+
+
+					+----------------------+
+					| b. Obtener elementos |
+					+----------------------+
+			
+					nombre.get(30888999);
+
+		
+		+------------+
+		| 1. HashMap |		
+		+------------+
+
+			Map nombres = new HashMap();
+
+			+--------------------+
+			| 	 nombres     | NO RESPETA EL ORDEN DE INSERCION 
+			+----------+---------+
+			| 30888999 | Mario   |
+			| 40888999 | Marcelo |
+		 	| 27888999 | Carlos  |
+			| 29888999 | Juan    | 
+		 	| 50888999 | Marcelo | 
+			+----------+---------+
+			
+		+------------------+
+		| 2. LinkedHashMap |	
+		+------------------+
+
+			Map nombres = new LinkedHashMap;
+
+			+--------------------+
+			|   	nombres      | RESPETA EL ORDEN DE INSERCION
+			+----------+---------+
+			| 29888999 | Juan    |
+			| 30888999 | Mario   |
+			| 27888999 | Carlos  |
+			| 40888999 | Marcelo | 
+			| 50888999 | Marcelo |
+			+----------+---------+
+		
+
+		+------------+
+		| 3. TreeMap |	
+		+------------+
+
+			Map nombres = new TreeMapp;
+
+			+--------------------+
+			|   	 nombre      | ORDENA SEGUN SU KEY - Entero de menor a mayor -
+			+----------+---------+
+			| 27888999 | Carlos  |
+			| 29888999 | Juan    |
+			| 30888999 | Mario   |
+			| 40888999 | Marcelo | 
+			| 50888999 | Marcelo |
+			+----------+---------+
+
+
++-------------------------------------+
+| MANERAS DE RECORRER LAS COLECCIONES |
++-------------------------------------+
+
+	+--------+
+	| a. FOR | Necesitamos los metodos .size() y .get()
+	+--------+	
+						+-------------+
+						|   nombres   | 
+						+-------------+
+	  			  i = get(0) 	| 0 | Juan    |
+				i++ = get(1)    | 1 | Mario   |
+				i++ = get(2)    | 2 | Carlos  |
+				i++ = get(3)    | 3 | Diego   |
+				i++ = get(4)   	| 4 | Marcelo |.size(5) Cantidad de elementos
+						+---+---------+
+
+			for(int i = 0; i < nombre.size(); i++){		 	/ a. .size() = Conocer cantidad elemento
+			System.out.printlin(nombre.get(i));			/ b. .get(i) = Obtenemos el valor y lo guardamos en i
+			}
+
+	+----------+	
+	| b. WHILE | Necesitamos los metodos .size() y .get()
+	+----------+
+
+						+-------------+
+						|   nombres   | 
+						+-------------+
+	 			  i = get(0) 	| 0 | Juan    |
+				i++ = get(1)    | 1 | Mario   |
+				i++ = get(2)    | 2 | Carlos  | -> Salida -->
+
+			int i = 0;
+			boolean encontrado = false;
+
+			while(i < nombre.size()){				/ a. .size() = Conocer cantidad elemento
+			  if(nombre.get(i) == "Carlos")				/ b. .get(i) = Obtenemos el valor y lo guardamos en i
+				encontrado = true;
+	  		  Systemo.out.println(nombre.get(i));
+			  i++;
+			}
+
+
+
+	+--------------+
+	| c. INTERATOR |
+	+--------------+
+		+---------------------+		+-----------------------+
+		|    <<interface>>    |		|    <<interface>>      |
+		|       Iterator      |		|       Iterable        |	
+		+---------------------+ <------	+-----------------------+
+		|+ hasNext(): boolean |		|+ Iterator(): Iterator | Devuelve un objeto de tipo Iterator mediante los metodos hasNext() y next()
+		|+ next(): Object     |		+-----------------------+
+		+---------------------+			
+
+				+-------------+
+				|   nombres   | 	
+				+-------------+		
+			next()  | 0 | Juan    |
+			next()  | 1 | Mario   |
+			next()  | 2 | Carlos  |		
+			next()  | 3 | Diego   |		
+			next()  | 4 | Marcelo |
+				+---+---------+
+
+			Iterator iterator = nombre.iterator();	   
+			
+			whele(iterator.hasNext()){	 			/ a. .hasNext()	= Nos indica si hay o no elementos en la coleccion
+				System.out.println(interator.next());		/ b. .next() 	= Devuelve el proximo elemento
+
+			}
+
+	+----------+	
+	| FOR EACH |
+	+----------+
+	Por cada objeto de la coleccion de nombres, colocarlo en el objeto nombre
+
+				+-------------+
+				|   nombres   | 	
+				+-------------+		
+		    nomnbre()   | 0 | Juan    |
+		    nomnbre()   | 1 | Mario   |
+		    nomnbre()   | 2 | Carlos  |		
+		    nomnbre()   | 3 | Diego   |		
+		    nomnbre()   | 4 | Marcelo |
+				+---+---------+
+
+			for(Object nombre: nombres){
+			System.out.println(nombre);
+			}
+
+
+
++-----------------------------------+
+|  GENERICS - TIPO DE DATO GENERICO | <> Provisorio
++-----------------------------------+
+	Tipo de dato generico para la estructura de dato o clase que se define al momentoto de usarlo
+
+Operador diamante <T>
+
+	+-----------------------------+
+	| NOMBRAMIENTO PARA GENERICOS |
+	+-----------------------------+
+		a. E 		Elementos
+		b. K 		Clave
+		c. N 		Numero
+		d. T 		Tipo - Type
+		e. V 		valor
+		f. S,U,V	varios genericos
+	
+	+-------------+
+	| CLASE BALDE | <T>
+	+-------------+
+
+		Public class Balde <T>{		/ Definimos clase Balde con tipo de dato <T> provisorio como parametro
+		private T contenido;
+
+		public Balde(){
+		}
+
+		public llenar(T contenido){
+			this.contenido = contenido;
+		}
+
+		public T obtenerContenido(){
+			return contenido
+		}		
+		}
+
+		+------+
+		| MAIN | <Agua>
+		+------+
+
+		Agua a = new Agua();
+		Combustible c = new Combustible()
+
+			Balde<Agua> b = new Balde<>();
+
+				b.setContenido(a) / 
+				b.setContenido(c) / ERROR No compila, El balde solo puede contener agua Balde<Agua>
+	
+					System.out.println("Voy a tomar " +b.obtenerContenido());
+
+
+
+	+-------------+
+	| CLASE BALDE | <Object> Colocar cualquier cosa en el balde(Agua, arena, combustible)
+	+-------------+
+
+		Public class Balde {		
+		private Object contenido;
+
+		public Balde(){
+		}
+
+		public llenar(Object contenido){
+			this.contenido = contenido;
+		}
+
+		public Object obtenerContenido(){
+			return contenido
+		}		
+		}
+
+		+------+
+		| MAIN | <Agua>
+		+------+
+
+		Agua a = new Agua();
+		Combustible c = new Combustible()
+
+			Balde b = new Balde<>();
+
+				b.setContenido(a) / 
+				b.setContenido(c) / 
+	
+					System.out.println("Voy a tomar " +b.obtenerContenido()); / Voy a tomar combustible 
+
+			+---------------------------+
+			| PROBLEMAS DEL TIPO OBJECT |
+			+---------------------------+
+				a. Debemos castear = 
+					(Agua) b.obtenerContenido()
+
+
+				b. Podriamos mezclar el contenido
+					Voy a tomar ¿¿combustible??
+
+
++--------------------------+
+| COLECCIONES PARAMETRICAS |
++--------------------------+
+
+Como las clase de java hereda de object podemos mezclar los objetos de difirenetes tipos dentro de una coleccion
+
+	Las Metodos de las colecciones del tipo Object
+
+		a. add(Object o): void
+		b. get(int i): Object
+		c. iterator(): iterator
+			hasNext(): Boolean
+			next():	Object
+
+					+--------------------------+
+					|	  Vehiculos	   | 
+					+--------------------------+
+				+------>| +estaDiponible():boolean |<------+
+				|	+--------------------------+	   |
+				|					   |
+	 	+----------------------------------+	+-----------------------------+
+	 	|		Moto		    |	|	      Camion	      |
+ 		+----------------------------------+	+-----------------------------+
+ 		| + llevarPaquete(paquete: String) |	| + cargar(tipoContenido:int) |
+ 		+----------------------------------+	+-----------------------------+
+
+	+----------+
+	| <Object> |
+	+----------+
+
+		+------+
+		| MAIN |
+		+------+
+
+		List vehiculos = new ArrayList();
+
+		Moto moto = new Moto();
+		Camion camion = new Camion();
+
+			vehiculos.add(moto);
+			vehiculos.add(camion)
+
+			+---------+
+			| Casting |
+			+---------+
+				Moto moto = (Moto)vehiculos.get(0);
+				Camion camion = (Camion)vehiculos.get(1);
+
+
+		+--------------------------+
+		|	  Vehiculos	   | 
+		+--------------------------+
+		| +estaDiponible():boolean |
+		+--------------------------+	
+			+-----------------------------------------------+
+			| Recorrer una lista para ver objeto Disponible |
+			+-----------------------------------------------+
+	
+				for(Object o : vehiculos){
+					System.out.println(((Vehiculos)o).estaDisponible());
+				}
+
+
+		+-----------------------------+
+		|	      Camion	      |
+		+-----------------------------+	
+		| + cargar(tipoContenido:int) |
+		+-----------------------------+
+			+----------------------------------------------------------+
+			| Castear aquellos elementos de la lista que sean camiones |
+			+----------------------------------------------------------+
+		
+				for(Objeto o : vehiculos){
+					if(o instanceof Camion)		/ instanceof = Compara si o es un Camion
+					((Camion)o).cargar("papas");
+				}
+
+	+------------------+
+	| SOLUCION GENERIC |
+	+------------------+
+		Para no mezclar los objetos de diferente tipo pueden recibir como parametro el tipo
+
+
+		ATNES   = List vehiculos = new ArrayList(); 		/Debiamos castear para comprobar)
+
+		DESPUES = List<Camion> vehiculos = new ArrayList();
+
+			for(Camion o : vehiculos){
+				o.cargar("papas");
+			}
+
++--------------------------------------------+
+| IGUALDAD Y ORDENAMIENTO DE LAS COLECICONES |
++--------------------------------------------+
+	+-------------------+
+	| ELEMENTOS IGUALES |
+	+-------------------+
+		+------------------------------+
+		| METODOS equals(), hashCode() | Determina si el elemento a almacenar es igual o no
+		+------------------------------+
+			En caso de Set si es igual no permitira su incersion	
+
+	+-----------------------+
+	| ORDEN ENTRE ELEMENTOS |
+	+-----------------------+
+
+		+----------------------------+		+-----------------------------+
+		| <<Interface>>       	     |		| 	     Persona	      |
+		| Comparable<Persona> 	     |		+-----------------------------+
+		+----------------------------+		| -nombre: String	      |
+		| +compareTo(o: Persona):int |<---+	| -apellido: String	      |
+		+----------------------------+	  |	| -edad: int		      |
+						  |	+-----------------------------+
+						  |	| +getNombreCompleto():String |
+						  |	| +esMayorEdad():boolean      |
+						  |	| +equals(o: Objetos):boolean |
+						  |	| +hashCode():int	      |
+						  +-----| +compareTo(o: Persona): int |
+							+-----------------------------+
+
+	+---------------------------------------------+
+	| TreeSet (Orden Valor) / TreeMap (Orden key) | Sobreescribir Metodo Comparable
+	+---------------------------------------------+
+			+----------------------------+
+			| <<Interface>>       	     |
+			| Comparable<Persona> 	     |
+			+----------------------------+
+			| +compareTo(o: Persona):int | Compara si el elemento es mayor o menor a otro
+			+----------------------------+
+	
+	+-------------------------------+
+	| List (ArrayList y LinkedList) | Sobreescribir Metodos: sort()
+	+-------------------------------+
+
+			personas.sort(null)
+
+
++-------------+
+| EXCEPCIONES | Previene de errores System.err.println();
++-------------+
+
+	+------------+
+	|try / catch |
+	+------------+
+		a. try: Protege que se respeten las intrucciones, si no se respetan sen generan Exceptiones
+		b. catch: Atrapa exception y muestra un mensaje con System.err.println("intento...");
+
+	+----------------+
+	| BLOQUE finally | Opcional - Se ejecuta siempre (Ocurra o no un catch)
+	+----------------+
+
+												
+		public static void main(String[] args){				
+		Scanner scanner = new Scanner(System.in);			
+		
+		int num1, num2, division;					
+											
+		try{										
+			System.out.println("Primer numero, debe ser un valor entero");	
+			num1 = scanner.nextInt();
+					
+			System.out.println("Divisor, un valor entero");			
+			num2 = scanner.nexInt();
+					
+			division = num1/num2;						
+			System.out.println(division); 					
+		}									
+												
+		catch(InputMismatchException exception){				 	EXCEPTION: ArithmeticException
+			System.err.println("Se ingreso un tipo de dato incorrrecto");}	
+												
+		catch(AritmeticaException exception){					 	EXCEPTION: InputMismatchException
+			System.err.println("Se intento dividir por cero");}		
+													
+		finally{System.out.println("Ha finalizado el ejemplo");}		 	finally (Mensaje Opcional)
+			
+
+	+-----------+
+	| Exception |
+	+-----------+
+		+--------------+
+		| 1. IOExption | Errores que no dependen del codigo (Archivo dañado, borrado o inexistente) Try / catch / finally
+		+--------------+
+			
+		+---------------------+
+		| 2. RuntimeException |
+		+---------------------+
+			a. ClassCastException
+			b. NullPointerException 
+			c. AritmeticException
+			d. IndexOutOfBoundsException 	
+				a. ArrayIndexOutOfBoundException
+			e. NoSushElementsException
+				a. InputMismatchException 
+
+
+
++---------------------------------+
+| PROTEGER INTEGRIDAD DE LA CLASE | RuntimeException
++---------------------------------+
+
+	A.
+		class Fecha{
+			private int day;
+			private int month;
+			private int year;
+
+			public Fecha(int d, int m, int y){
+				day=d;
+				month=m;
+				year=y;
+			}
+		}
+
+		public Static void main(String[] args){
+			Fecha fecha = new Fecha(100,-100,1000);	
+		}
+
+
+	B.
+		class Fecha{
+			private int day;
+			private int month;
+			private int year;
+
+			public Fecha(int d, int m, int y){
+				if (d<1||d>31||m<1||m>12)
+					throw new RuntimeException("Los valores no son validos");		| Lanzar una Exception throw Del tipo RuntimeException
+				day=d;										| new = Creamos la nueva exception
+				month=m;
+				year=y;
+			}
+		}
+
+		public Static void main(String[] args){
+			Fecha fecha = new Fecha(100,-100,1000);	
+		}
+
+		TERMINAL: Exception in thread "main" java.langRutimeException: Los valores no son valido	| Nos genera una exception de tipo RuntimeException
+														| No es obligatorio protegerla con bloques trt / catch)
+
+	
+	C.
+		class Fecha{
+			private int day;
+			private int month;
+			private int year;
+
+			public Fecha(int d, int m, int y){
+				if (d<1||d>31||m<1||m>12)
+					throw new RuntimeException("Los valores no son validos");		| Lanzar una Exception throw Del tipo Exception (Try / Catch)
+				day=d;										| 
+				month=m;
+				year=y;
+			}
+		}
+
+		public Static void main(String[] args){
+
+			try{
+
+				Fecha fecha = new Fecha(100,-100,1000);						| throw Exception = throweable (nos obliga  a protegerlo con try / catch)
+
+				catch(Exception e){
+					System.err.println("No son validos para una fecha");
+				}
+			}
+
+
++----------------------------+
+| EXCEPTIONES PERSONALIZADAS | Lanzar excepciones adecuadas
++----------------------------+
+
+
+		+----------------------------+
+		|	      Fecha	     |
+		+----------------------------+
+		| - int day		     |
+		| - int month		     |
+		| - int year		     |
+		+----------------------------+
+		| Fecha(int d, int m, int y) |
+		+----------------------------+
+
+
+		POSIBLES ERRORES:
+			a. Dia fuera de rango (Practica)
+			b. Mez Fuera de rango
+
+
+			public class fecha extedrs Exception									| Extendemos de Ecxcpetion. Creamos dos constructores
+		
+				public FechaException(){									| Constructor 1
+					super();
+				}
+
+				public FechaException(String mensaje){								| Constructor 2 (Con parametro)
+					super(mensaje);										| mensaje: va a mostrar el error en detalle
+				}
+
+
+				public String toString(){
+					retunr "Se produjo la siguiente Excepiton "+ this.getClass().getName() + "\n" +  	| Sobreescribimos el metodo toString()
+					"Mensaje: "+ this.getMessage()+ "\n";
+				}}
+
+
+		En este ejemplo extendemos de Exception, pero se puede extender de cualquier excepcion definiada en la API
+		Es conveniente utilizar la mas relacionada con la condicion a proteger
+
++-----------------------------------+
+| USAR NUESTRAS PROPIAS EXCEPCIONES |
++-----------------------------------+
+
+
+			|----------------------------------------------------------------------------------> CLASE
+				class Fecha{
+					private int day;
+					private int month;
+					private int year;
+
+					public Fecha(int d, int m, int y){
+						if(d<1||d>31)
+							thorw new FechaExeption("Error en el Dia");			| Dia Fuera de rango = Exception = FechaExeption("Error en el Dia")
+						day=d;
+						if(m<1||m>12)								| thorw: Obliga a usar (try / catch)
+							thorw new FechaException("Error en el Mes");			| Mes Fuera de rango = Exception = FechaExeption("Error en el Mes")									
+						month=m;								
+						year=y;									| Al generar una Exception el codigo deja de ejecutarce
+						}
+					}
+			|---------------------------------------------------------------------------------> MAIN
+				public Static void main(String[] args){
+					try{
+						Fecha fecha = new Fecha(100,-100,1000);}
+					catch(FechaException exception)
+						{System.err.println(exception.getMessague());				| Obtendremos el mensaje que programemos
+
+					}
+			|---------------------------------------------------------------------------------|
+
+
+
++--------------------------------------+
+| PATRONES DE DISEÑOS - design pattern | 
++--------------------------------------+
+	a. Sujerencias de uso 
+	b. Brindan soluciones rapidas a problemas recurrentes, agilizando el desarrollo de un diseño
+	c. Fueron definido en el libro: Patrones de diseño 
+
+	+-----------------------------+
+	| Estandares de Procedimiento |
+	+-----------------------------+
+		a. Utilizar estructuras de programacion conocidas y consolidadas en el mercado con funcion ya definida
+		b. Define una solucion reutilizable para un problema recurrente
+		c. No es un codigo si no un modelo de como resolver determinado problema
+		d. Definen la relacion e interaccion entre clase u objeto (Sin especificar sus detalles)
+		e. Un patron de diseño define: Nombre / Problema / Solucion / Cuando aplicar (Solucion) / Consecuencia (Solucion)
+
+
++-------------------+
+| Tipos de patrones |
++-------------------+
+	a. Creacionales
+	b. Estructurales
+	c. Comportamento
+
+	+-----------------+
+	| a. Creacionales |
+	+-----------------+
+		Abstraer el proceso de como los objetos son creados en una aplicaicon
+		Nos proporionan:
+			a. <<Intrerfaces>> para crear objetos
+			b. Copiar objetos existentes
+			c. Producir familia de objetos relacionados sin expecficar sus CLASES
+		Producen diferentes representaciones con el mismo codigo
+
+	+------------------+
+	| b. Estructurales |
+	+------------------+
+		Lidian con la composicion de una clase y objeto
+		Habilitan la colaboracion de los objetos con interfaces incompatibles agregando nuevos comportamientos a objetos
+		Podemos dividir una clase o conjunto de clases viculadas en gerarquias separadas (Abstracicon o Implementacion) Pueden ser desarrolladas independientemente
+		Componer Objeto en estructura de arbol, para luego trabajar con la estructura como objetos individuales
+
+ 	+-------------------+
+	| c. Comportamiento |
+	+-------------------+
+		Se encarga de las relaciones entre objetos y clases
+		Distriuciones de responsabilidades en una aplicacion
+		Algunos patrones utilizan HERENCIA para distribuir el comportamiento entre las clases mientras utilizan la composicion para distribuir ese comportamiento
+
+
++------------------------+
+| COMPOSICION Y HERENCIA |
++------------------------+
+	Mecanismos para reutilizar la funcionalidad (no ser repetitivo ni escribir codigo innecesario)
+
+	+-------------+
+	| 1. HERENCIA |
+	+-------------+
+		Define comportamientos estaticos (Propios de la clase)
+
+		+----------+
+		| Ventajas |
+		+----------+
+			a. Captura lo comun y lo aisla de lo diferente
+			b. Se ve directamente en el codigo debido a su naturaleza estatica(propia de la clase)
+			c. Permite crear jerarquia de clases mas especializadas (no hay que empezar de cero)
+
+		+-------------+
+		| Desventajas |
+		+-------------+
+			a. Encapsulamiento debil
+			b. El cambio de una SuperClase afecta a las SubClases
+			c. Aveces un objeto debe ser de una clases diferentes (No es posible por su relacion estatica)
+
+	+----------------+
+	| 2. COMPOSICION |
+	+----------------+
+		No define comportamientos estaticos como Herencia 
+		Define comportamientos predeterminados usados para declarar comportamientos mas complejos
+	
+		+----------+
+		| Ventajas |
+		+----------+
+			a. El comportamiento se puede elejir en tiempo de ejecucion
+			b. Los objetos instanciados son accedidos a travez de su interface
+
+		+-------------+
+		| Desventajas |
+		+-------------+
+			a. Software dinamico y parametrizado. Es mas dificil de entender
+
+	+----------------------------------------------------+
+	| Cuando usarlo la herencia en vez de la composicion |
+	+----------------------------------------------------+
+		a. Si una instancia de una SubClase nunca se convertira en objeto de otra clase 
+		b. Si representa una relacion "Es una" y no "Tiene una"
+		c. Realizan cambios globales en las Subclase desde la SuperClase
+		d. La SubClase extiende las responsabilidades de la SuperClase en lugar de reemplazarlas 
+
+
++---------------------------------+
+| PATRONES DE DISEÑO RECOMENDADOS |
++---------------------------------+
+	1. Singleton 
+	2. Factory
+	3. State
+	4. Composite
+	5. Observer
+	6. Strategy
+
+	+--------------+
+	| 1. Singelton |
+	+--------------+
+		Parton de diseño de creacion
+		Garantiza que una clase tenga una sola instancia
+		Solo la clase administra la instancia (Evita que otra clase creae una instancia de ella)
+		Para crear una instancia debe pasar obligatoriamente por la clase
+		Proporciona un punto de acceso global a su instancia
+		La Clase ofrecera su instancia, si no tiene una, la crea y la devuelve recien creada
+		
+		Se usa cuando: 
+			Necesita un solo punto para crear una instanca de la clase
+			Necesita una sola instancia de la clase
+
+		+-------------------+
+		| Informacion Extra |
+		+-------------------+
+			Normalmente una clase no necesita mas de una isntancia
+			Es la clase quien conecta con la base de dato
+			Mas de una conceccion a la DB trae problema si se ejecuta el codigo al mismo tiempo
+			Singelton bloquea la posibiliad de instanciar la clase fuera de si misma
+			La SubClases tampoco pueden instanciar
+			Permite que exista sola una instancia
+
+		+-------------------------------+
+		| CREAR UNA CLASE CON SINGLETON |
+		+-------------------------------+
+			1. ATRIBURO estatico (static),con el tipo de la clase, y con el nombre de la instnacia
+			2. Constructor: Private
+			3. Crear un metodo getInstance() Static que devuelva el atributo de la instancia
+
+
+			|--------------------------------------------------------------> UML
+
+				+---------------------------------+
+				| 		Auto		  |
+				+---------------------------------+
+				| - <<static>> OBJETO: Auto	  |
+				+---------------------------------+
+				| <<constructor>>Auto		  |	CLASE 	= Auto
+				| + <<static>> getnstance(): Auto |	OBJETO 	= Instance
+				+---------------------------------+
+
+			|--------------------------------------------------------------> Forma 1	
+
+				public class Auto {		
+	
+					private static Auto Instance = new Auto();			| Atributo	|
+															|> Incializacion Tardia 
+					private Auto(){}						| Constructor	|  Hasta que no se invova getInstance no se crea nigun objeto
+		
+					public static Auto getInstance(){				| Metodo getInstance()
+				   	   if(Instance == null)
+				     	      Instance = new Auto();
+				   	   return Instance;
+					}
+
+			|------------------------------------------------------------> Forma 2
+
+				public class Auto {		
+	
+					private static Auto Instance = new Auto();			
+													
+					private Auto(){}						
+		
+					public static Auto getInstance(){				
+				   	   return Instance;
+					}
+
+
+	+------------+
+	| 2. Factory | Patron de creacion NOOOO ENTENDIDO
+	+------------+
+		Crear Objetos
+		La logica de creacion, esta encapsulada dentro de la fabrica(FactoryMethod) 
+		se proporciona un metodo que devuelve u objeto(Metodo Factory predeterminado)
+		o la creacion del objeto se delega una SubClase(medoto Abstract Factory predeterminado)
+
+		+-------------------+
+		| a. Factory Method |
+		+-------------------+
+			* Patron que define una Interfaz para crear un objeto
+			* Permite que las SubClases decidan que clase instanciar
+			* Estas fabricas de construccion minimizan el uso de new
+			* Encapsulan el proceso de inicializacion y diferentes implementaciones concretas
+			* Ademas, esta centralizacion minima el efecto de agregar y eliminar clases concretas en el sistema 
+			y los efectos de las dependencias de clases concretas
+
+			|--------------------------------------------------------------> a. FactoryMethod		
+				+-------------------------+		+---------+
+				| 	Creator		  |		| Product |
+				+-------------------------+ ----------> +---------+
+				| #factoryMethod: Product |		|	  |
+				+------------+------------+		+-----+---+
+					    /|\				     /|\
+					     |				      |
+				+------------+------------+		+-----+-----------+
+				|    ConcreteCreator 	  |		| ConcreteProduct |
+				+-------------------------+ ----------> +-----------------+
+				| +factoryMethod: Product |		|	  	  |
+				+-------------------------+		+-----------------+
+
+				a. Creator(Creador abstracto): Declara #factoryMethod(Metodo de fabricacion) que retorna el metodo de la clase producto
+				   Este elemento puede definir una implementacion base que devuelve un objeto de la clase ConcreteProduct
+
+				b. ConcreteCreador(Creador concreto) Sobreescribge el metodo qye fabrica el product
+				   Nos permite instanciar el ConcreteProduct sin hacerle referencia directa
+
+				c. Product(Producto abstracto) Interfaz para los objetos creados por el factorymethod
+			
+				d. ConcreteProduct(Producto concreto)implementacion para la interfaz del producto
+
+
+			|--------------------------------------------------------------> a. FactoryMethod(youtube)
+
+
+						+------------------+
+						|   <<Interface>>  |					+-------------------+
+						|       forma	   |					| FactoryPatronDemo |
+						+------------------+					+-------------------+
+						| +dibujar(): void |					| +main(): void	    |
+						+---------+--------+					+-------------------+
+					 		 /|\						   	   |			  
+					  		  |Implement						   |
+					 		  |							   |
+		  		  +-----------------------+----------------------+				   |
+		  		  |                       |                      |                                 | 
+		  		  |                       |                      |                                \|/             
+			+---------+--------+	+---------+--------+	+--------+---------+		+----------+-----------------------+
+			|      Circulo     |	|     Cuadrado     |	|    Rectangulo    |		|            FormaFactory  	   |
+			+------------------+	+------------------+	+------------------+ <----------+----------------------------------+
+			| +dibujar(): void |	| +dibujar(): void |	| +dibujar(): void |		| + getForma(String figura): Forma |
+			+------------------+	+------------------+	+------------------+		+----------------------------------+
+
+
+			|--------------------------------------------------------------> Auto
+				public abstract class Auto {
+    					private String nombre;
+
+   					public String getNombre() {
+        					return nombre;
+    					}
+
+    					public void acelerar(){
+        					System.out.println("Voy acelerar como un "+ getNombre());
+    					}
+					}	
+
+			|--------------------------------------------------------------> Auto Bugatti
+				public class Bugatti extends Auto {
+   					String nombre = "Bugatti";
+
+    					@Override
+   					public String getNombre() {
+       						return nombre;
+    					}
+
+    					@Override
+    					public void acelerar(){
+        					super.acelerar();
+    					}
+					}
+
+			|--------------------------------------------------------------> Auto Ferrari
+				public class Ferrari extends Auto{
+   	 				String nombre = "Ferrari";
+
+    					@Override
+    					public String getNombre() {
+        				return nombre;
+    					}
+
+    					@Override
+    					public void acelerar(){
+        					super.acelerar();
+    					}
+					}
+
+			|--------------------------------------------------------------> Fabrica de auto
+				public class FabricaDeAutos {
+    					public static Auto constrir(String QueAuto){
+        					switch (QueAuto){
+            						case "Ferrari":
+                						return new Ferrari();
+           						case "Bugatti":
+                						return new Bugatti();
+           						default:
+                						System.out.println("No se ha especificado el auto que quiere fabricar");
+                					return null;
+        						}
+    						}
+					}
+
+			|--------------------------------------------------------------> Cliente
+				public class Main {
+   		 			public static void main(String[] args) {
+        					Auto f1 = FabricaDeAutos.constrir("Ferrari");
+        					f1.acelerar();
+
+        					Auto b1 = FabricaDeAutos.constrir("Bugatti");
+        					b1.acelerar();
+    						}
+					}
+
+
+		+---------------------+
+		| b. Abstract Factory |
+		+---------------------+
+			* Patron de diseño creacional
+			* Proporciona una interfaz para crear familias de objetos (dependientes o relacionados) 
+			  sin especificar sus clases conctretas
+			* El cliente trabaja con fabrica y productos unicamente a traves de sus interdaces abstractas
+
+			+----------------+
+			| Cuando usarlos |
+			+----------------+ 
+				Cuando el sistema debe ser independite de como se crean sus objetos
+				Cuando en una familia de productos relacionas, estos estan diseñados para ser usados juntos 
+				Cuando una clase lidia con varios tipos de productos
+
+
+			|--------------------------------------------------------------> b. Abstract Factory
+				a. AbstractFactory: Declarar metodos de creacion de tipo
+				 . AbstractProduct: Son implementados por una clse de tipo
+				 . ConcreteFactory: Hereda o implementa a AbstractFacroty
+
+				b. AbastracProduct: Declara metodos implementados por clases de tipo
+				 . ConcreteProduct: ConcreteFactory crea internamente un objeto de tipo concretProduct
+				   pero este objeto se devuelve como AbstractFactory
+
+				c. ConcreteFacroty: Implementa los metodos declarados en AbstractFactory
+				   creando un objeto de tipo ConcreteProduct y devolviendo como abstractProduct
+
+				d. ConcreteProduct: Es la clase que especifica la instancia correcta a crear
+				   Implementa los metodos declarados en AbstractProduct
+				
+			|--------------------------------------------------------------> b. Abstract Factory
+
+					+------------------+
+					| AbstractFactory  |							   +---------+
+					+------------------+-------------------------------------------------------| Cliente |
+					| CreateProductA() |							   +---------+
+					+------------------+								|
+					| CreateProductB() |				+------------------+		|
+					+-------+----------+			        | AbstractProductA |<-----------+
+				  		|			          	+----+----------+--+		|
+				  		|				 	     |		|		|
+		  			+-------+---------------+		    +--------+--+ +-----+-----+		|   
+		  			|			|		+-->| ProductA1 | | ProductA2 |<--+	|
+				+---------+--------+	+-------+----------+	|   +-----------+ +-----------+	  |	|
+				| AbstractFactory  |	| AbstractFactory  |----|   				  |	|
+				+------------------+	+------------------+	|   				  |	|
+				| CreateProductA() |	| CreateProductA() |	|       +------------------+	  |	|
+				+------------------+	+------------------+	|       | AbstractProductB |<-----+-----+
+				| CreateProductB() |	| CreateProductB() |	|       +----+----------+--+	  |
+				+---------------+--+	+------------------+    |   	     | 		|	  |
+						|				|   +--------+--+ +-----+-----+   |
+						|				+-->| ProductB1 | | ProductB2 |<--+
+						|				    +-----------+ +-----------+	  |
+						|								  |
+						+-----------------------------------------------------------------+
+						
+		
+
+	+----------+
+	| 3. State | Los objetos cambien segun su estado
+	+----------+
+		Crea un objeto por cada estado del objeto que lo invoca
+		Se implementa una clase para diferente estado y cada clase implementa metodos cuyo comportamiento varia segun su estado
+
+		Asi siempre se tendra una referencia a un estado concreto y se comunicara con este para resolver responsabilidades
+
+		+------------------------+
+		| Ventajas y Desventajas |
+		+------------------------+
+			+----------+
+			| VENTAJAS |
+			+----------+
+				* Se localizan facilmente las responsabilidades de los estados (Se encuentran en las clases que corresponde a cada estado)
+			   	  brindando mayor claridad en el desarrollo y mantenimiento posterior
+
+				* Hace los cambios explicitos al estar representado cada estado en una clase
+
+				* Facilita la ampliacion de los estados
+
+				* Permite a objeto cambiar de clase en tiempo de ejecucion, dado que al cambiar sus responsabilidades por las de otro objeto
+			  	  de otra clase, la herencia y resposabilidades del primero han cambiado por las del segundo
+
+			+------------+
+			| DESVENTAJA |
+			+------------+
+				* Se incrementa el numero de subclases
+						
+			|--------------------------------------------------------------> State
+
+					+---------------+
+					| <<interface>> |	+-----------+
+					|      State    |	| Contexto  |
+					+---------------+<------+-----------+							
+					| 		|	|	    |
+					+---------------+	+-----------+
+					| +accion()	|	| +accion() |
+					+-------+-------+	+-----------+			      
+				  		|			          	
+		  			+-------+-----+-------------+		+------------------+	
+		  			|	      |		    |		| accion(){	   |
+				+-----------+	+-----------+	Etcetera	|  estado.accion() |
+				|  Estado1  |	|  Estado2  |			| }		   |
+				+-----------+	+-----------+			+------------------+
+				|           |	|           |	
+				+-----------+	+-----------+	
+				| +accion() |	| +accion() |	
+				+-----------+	+-----------+   
+						
+			|--------------------------------------------------------------> State
+				Clase contexto: Define la interfaz con el cliente.
+				La instancia de contexto es la que define su estado actual		
+
+				Interface State(estado): Interface para el encapsulamiento de la responsabilidades
+				asociado con un estado en particular de contexto
+				Define las responsabilidades de cada estado
+
+				Clase estado: Cada una implementa el comportamiento o responsabilidad de contexto
+
+			+-----------------+
+			| ¿Como funciona? |
+			+-----------------+
+				La clase CONTEXTO envia un mensaje al objeto dentro de su codigo que iene una instancia de ESTADO
+				para brindarle aestos la responsabilidad que debe cumplir el objeto CONTEXTO
+				Asi el objeto contexto va cambiando las responsabilidades segun el estado en que se encuentre, puesto
+				que tambien cambia de instancia de ESTADO al hacer un cambio de estado
+
+				CONTEXTO le dice a instancia de estado que haga la accion
+				Pero cuando cambia la instancia de la clase ESTADO [Estado1, Estado2, etc] la accion se realiza
+				de forma diferente segun este
+
+			+--------------+
+			| CONCLUCIONES |
+			+--------------+
+				El patron nos indica exactamente donde definir las transiciones de un estado a otro
+				Existen dos formas de solucionar esto
+
+				1. Definiendo estas transiciones dentro de una clase contexto
+				2. Definiendo estas transiciones en las subclases State
+
+				Es mas convente la primera solucion cuando el criterio a aplicar es fijo (no se modificara)
+				La segunda convuene cuando este criterio es dinamico. Se presenta en la dependencia de codigo entre subclases
+				
+				Tambien hay que evaluar en la implementacion cuando crear instancias de estado contreto distintas o utilizar
+				la misma instancia compartida. Esto dependera si el cambion de estado es menos o mas frecuente respectivamente
+
+
+			|--------------------------------------------------------------> State
+
+					+---------------+	    +--------------------------+
+					| <<interface>> |      	    |            Auto          |
+					|  StateAuto    | 1 tiene 1 +--------------------------+
+					+---------------+<----------|- VelocidadActual: int    |					
+					| 		|	    |- CopmbustibleActual: int |
+					+---------------+	    +--------------------------+
+					| +acelerar()	|	    | +acelerar()	       |
+					| +contacto()	|	    | +contacto()	       |				
+					| +frenar()	|	    | +frenar()		       |
+					+-------+-------+	    +--------------------------+			      
+				  	       /|\
+					        |			          	
+		  			+-------+-------+-----------------+--------------+	
+		  			|	     	|		  |		 |
+				+-------------+  +-------------+  +-------------+  +-------------+
+				|  Apagado    |  |  Parado     |  |  EnMarcha   |  |   SinNafta  |				
+				+-------------+	 +-------------+  +-------------+  +-------------+
+				|-v: Auto     |	 |-v: Auto     |  |-v: Auto     |  |-v: Auto     |
+				+-------------+  +-------------+  +-------------+  +-------------+
+				| +acelerar() |	 | +acelerar() |  | +acelerar() |  | +acelerar() |
+				| +contacto() |	 | +contacto() |  | +contacto() |  | +contacto() |
+				| +frenar()   |  | +frenar()   |  | +frenar()   |  | +frenar()   |
+				+-------------+  +-------------+  +-------------+  +-------------+
+
+
+	+---------------------+
+	| 4. Patron Composite | Patron Estructural
+	+---------------------+
+		Componer objetos en estrucuras de arbol para representar gerarquias
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
